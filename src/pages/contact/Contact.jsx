@@ -1,14 +1,19 @@
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin } from "lucide-react";
+import usePageMeta from "../../hooks/usePageMeta";
 
 const Contact = () => {
+  usePageMeta(
+    "Contact B-Spoke | Melbourne Renovation Experts",
+    "Contact B-Spoke for kitchen, bathroom, laundry or home renovations in Melbourne. Get a quote or speak with renovation specialists."
+  );
   return (
     <div className="bg-white">
       {/* Banner Section */}
       <div className="relative h-[50vh] min-h-[600px] w-full overflow-hidden">
         <img
           // src="/contact_us/Contact_us.jpg"
-          src="https://res.cloudinary.com/dv18awr10/image/upload/v1772790794/Contact_us_aionor.jpg"
+          src="https://dc3v08iv2c2ou.cloudfront.net/contact_us/Contact_us.jpg"
           alt="Contact Us"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -88,7 +93,7 @@ const Contact = () => {
                   <h3 className="font-semibold text-lg text-gray-900 mb-1">
                     Location
                   </h3>
-                  <p className="text-[#2D6B7A] text-base">Settlers Way</p>
+                  <p className="text-[#2D6B7A] text-base">Settlers Way, Sunbury</p>
                 </div>
               </div>
             </div>
@@ -102,14 +107,14 @@ const Contact = () => {
             className="w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-lg"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.044728708738!2d151.17556553!3d-33.72584480!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7292ab0a0a0a0d%3A0x8d8d8d8d8d8d8d8d!2sSettlers%20Way%2C%20Westleigh%20NSW%202120!5e0!3m2!1sen!2s!4v1709510400000!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.8908547!2d144.39!3d-37.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6fd8d3b3b3b3b3b3%3A0x0!2s80%20Settlers%20Way%2C%20Sunbury%20VIC%203429!5e0!3m2!1sen!2s!4v1709510400000!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Settlers Way Westleigh Location Map"
+              title="80 Settlers Way Sunbury Location Map"
             ></iframe>
           </motion.div>
         </div>

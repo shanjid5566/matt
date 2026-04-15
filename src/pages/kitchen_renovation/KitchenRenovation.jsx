@@ -7,8 +7,13 @@ import CTASection from "../homePage/components/CTASection";
 import { useRef } from "react";
 import PhotoGallery from "../homePage/components/PhotoGallery";
 import FeatureMediaSection from "../homePage/components/FeatureMediaSection";
+import usePageMeta from "../../hooks/usePageMeta";
 
 function KitchenRenovation() {
+  usePageMeta(
+    "Kitchen Renovation Melbourne | Custom Kitchens",
+    "Kitchen renovation Melbourne with custom designs, modern layouts and quality finishes. Upgrade your kitchen with expert builders."
+  );
   const videoRef = useRef(null);
 
   const features = [
@@ -60,7 +65,7 @@ function KitchenRenovation() {
           >
             <source
               // src="/public/Our_services/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc.mp4"
-              src="https://res.cloudinary.com/dv18awr10/video/upload/v1772779483/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc_esyvna.mp4"
+              src="https://dc3v08iv2c2ou.cloudfront.net/Our_services/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -146,7 +151,7 @@ function KitchenRenovation() {
             >
               <img
                 // src="/public/protfollio/kitchen/Kitchen_Sunbury_2.jpg"
-                src="https://res.cloudinary.com/dv18awr10/image/upload/v1772786235/Kitchen_Sunbury_2_arssds.jpg"
+                src="https://dc3v08iv2c2ou.cloudfront.net/kitchen_renovation/Kitchen_Sunbury_2.jpg"
                 alt="Kitchen Design"
                 className="w-full h-full object-cover"
               />
@@ -188,7 +193,7 @@ function KitchenRenovation() {
             >
               <img
                 // src="/kitchen_renovation/image_2.JPG"
-                src="https://res.cloudinary.com/dv18awr10/image/upload/v1772786096/image_2_evrvx0.jpg"
+                src="https://dc3v08iv2c2ou.cloudfront.net/kitchen_renovation/image_2.JPG"
                 alt="Kitchen Example"
                 className="w-full h-full object-cover"
               />

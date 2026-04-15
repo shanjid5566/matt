@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import PhotoGallery from "../homePage/components/PhotoGallery";
+import usePageMeta from "../../hooks/usePageMeta";
 
 const faqData = [
   {
@@ -307,6 +308,10 @@ const faqData = [
 ];
 
 const FAQ = () => {
+  usePageMeta(
+    "Renovation FAQs Melbourne | B-Spoke Builders",
+    "Answers to common renovation questions on cost, timeline and process for kitchen, bathroom and home renovations in Melbourne."
+  );
   const [openId, setOpenId] = useState(null);
 
   const toggleFAQ = (id) => {
@@ -324,7 +329,7 @@ const FAQ = () => {
       >
         <motion.img
           // src="/faq/FAQ.jpg"
-          src="https://res.cloudinary.com/dv18awr10/image/upload/v1772789385/FAQ_oiiob2.jpg"
+          src="https://dc3v08iv2c2ou.cloudfront.net/faq/FAQ.jpg"
           alt="Frequently Asked Questions"
           className="absolute inset-0 w-full h-full object-cover"
           initial={{ scale: 1.1 }}

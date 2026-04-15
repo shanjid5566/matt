@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import usePageMeta from "../../hooks/usePageMeta";
 
 const initialState = {
   name: "",
@@ -46,15 +47,20 @@ function transformToAPI(data) {
     evening: "3:00 PM",
   };
 
+  const address = String(data.address || "").trim();
+  const bathroom = String(data.bathrooms || "").trim();
+
   return {
     name: data.name,
     email: data.email,
     phone: data.phone,
-    company: data.address,
+    address,
     postcode: data.postcode || "",
     propertyType: data.propertyType || "",
     service: data.services.join(", "),
-    budget: data.bathrooms || "",
+    // Send both singular and plural keys for backend/template compatibility.
+    bathroom,
+    bathrooms: bathroom,
     message: data.details,
     timeline: data.timeline || "",
     timelineDetails: data.timelineDetails || "",
@@ -64,6 +70,10 @@ function transformToAPI(data) {
 }
 
 export default function BookConsultation() {
+  usePageMeta(
+    "Book Renovation Consultation Melbourne | B-Spoke",
+    "Book a consultation with Melbourne renovation experts for kitchen, bathroom, laundry or home renovation planning and quotes."
+  );
   const navigate = useNavigate();
   const [formData, setFormData] = useState(initialState);
   const [submitStatus, setSubmitStatus] = useState({
@@ -80,6 +90,12 @@ export default function BookConsultation() {
   const handlePostcodeChange = (e) => {
     const digits = e.target.value.replace(/\D/g, "").slice(0, 4);
     setFormData((prev) => ({ ...prev, postcode: digits }));
+  };
+
+  // Bathrooms: allow only digits
+  const handleBathroomsChange = (e) => {
+    const digits = e.target.value.replace(/\D/g, "");
+    setFormData((prev) => ({ ...prev, bathrooms: digits }));
   };
 
   const handleCheckbox = (service) => (e) => {
@@ -395,8 +411,10 @@ export default function BookConsultation() {
             <LabeledInput
               label="Number of bathrooms"
               id="bathrooms"
+              type="text"
+              inputMode="numeric"
               value={formData.bathrooms}
-              onChange={handleChange("bathrooms")}
+              onChange={handleBathroomsChange}
               placeholder="e.g. 1, 2, 3"
               required
             />

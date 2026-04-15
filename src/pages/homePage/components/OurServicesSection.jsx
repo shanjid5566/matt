@@ -7,6 +7,16 @@ const OurServicesSection = () => {
   const stickyRef = useRef(null);
   const firstCardRef = useRef(null);
 
+  const getVideoPosterUrl = (url) => {
+    if (!url.includes("/video/upload/")) {
+      return url;
+    }
+
+    return url
+      .replace("/video/upload/", "/video/upload/so_0/")
+      .replace(/\.mp4($|\?)/, ".jpg$1");
+  };
+
   const services = [
     {
       id: 1,
@@ -16,7 +26,7 @@ const OurServicesSection = () => {
       // video:
       //   "/Our_services/modern-bathroom-interior-with-freestanding-tub-and-2025-12-17-15-15-24-utc.mp4.mp4",
       video:
-        "https://res.cloudinary.com/dv18awr10/video/upload/v1772779373/modern-bathroom-interior-with-freestanding-tub-and-2025-12-17-15-15-24-utc.mp4_sijhou.mp4",
+        "https://dc3v08iv2c2ou.cloudfront.net/Our_services/modern-bathroom-interior-with-freestanding-tub-and-2025-12-17-15-15-24-utc.mp4.mp4",
       type: "video",
       path: "/bathroom-renovation",
     },
@@ -25,10 +35,10 @@ const OurServicesSection = () => {
       title: "Laundry Renovation",
       description:
         "Expert laundry room renovation from planning and design to plumbing installation, ensuring everything is done correctly.",
+      // video:
+      // "/Our_services/modern-washing-machine-in-a-laundry-room-against-a-2026-01-09-00-42-26-utc.jpg",
       video:
-        "/Our_services/modern-washing-machine-in-a-laundry-room-against-a-2026-01-09-00-42-26-utc.jpg",
-      video:
-        "https://res.cloudinary.com/dv18awr10/image/upload/v1772779455/modern-washing-machine-in-a-laundry-room-against-a-2026-01-09-00-42-26-utc_htu37j.jpg",
+        "https://dc3v08iv2c2ou.cloudfront.net/Our_services/modern-washing-machine-in-a-laundry-room-against-a-2026-01-09-00-42-26-utc.jpg",
       type: "image",
       path: "/laundry-renovation",
     },
@@ -38,9 +48,9 @@ const OurServicesSection = () => {
       description:
         "Complete kitchen renovation from design to construction with warranty on labor and materials. Highest quality, transparent process, and excellent results within your budget.",
       // video:
-      //   "/Our_services/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc.mp4",
+      // "/Our_services/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc.mp4",
       video:
-        "https://res.cloudinary.com/dv18awr10/video/upload/v1772779483/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc_esyvna.mp4",
+        "https://dc3v08iv2c2ou.cloudfront.net/Our_services/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc.mp4",
       type: "video",
       path: "/kitchen-renovation",
     },
@@ -50,7 +60,8 @@ const OurServicesSection = () => {
       description:
         "We build retails spaces that are not only visually stunning but also functional and efficient.",
       // video: "/Our_services/envato-labs-image-edit.png",
-      video: "https://res.cloudinary.com/dv18awr10/image/upload/v1772779550/envato-labs-image-edit_oosbcv.png",
+      video:
+        "https://dc3v08iv2c2ou.cloudfront.net/Our_services/envato-labs-image-edit.png",
       type: "image",
       path: "/shop-fitouts",
     },
@@ -178,6 +189,8 @@ const OurServicesSection = () => {
                           muted
                           loop
                           playsInline
+                          preload="none"
+                          poster={getVideoPosterUrl(service.video)}
                           className="w-full h-full object-cover transition-transform duration-500"
                         >
                           <source src={service.video} type="video/mp4" />

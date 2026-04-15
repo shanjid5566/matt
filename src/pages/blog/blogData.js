@@ -11,7 +11,7 @@ export const blogPosts = [
     readTime: "10 min read",
     // image: "/blogs/IMG_4249.JPG",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772789735/IMG_4249_wa1twy.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/IMG_4249.JPG",
     date: "2026-02-15",
   },
   {
@@ -25,7 +25,7 @@ export const blogPosts = [
     readTime: "8 min read",
     // image: "/blogs/20251015_163557.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772789780/20251015_163557_fvmers.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/20251015_163557.jpg",
     date: "2026-02-12",
   },
   {
@@ -39,7 +39,7 @@ export const blogPosts = [
     readTime: "12 min read",
     // image: "/blogs/E0767E31-4B95-4F5C-886F-8BBCB1368F06.JPG",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772789869/E0767E31-4B95-4F5C-886F-8BBCB1368F06_voecib.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/E0767E31-4B95-4F5C-886F-8BBCB1368F06.JPG",
     date: "2026-02-10",
   },
   {
@@ -50,9 +50,9 @@ export const blogPosts = [
       "Planning a commercial fitout in Melbourne? This expert guide covers costs, timelines, regulations, design considerations, and how to ensure your project runs smoothly from concept to completion.",
     category: "Commercial",
     readTime: "11 min read",
+    // image: "/blogs/two-glasses-of-red-wine-on-the-counter-in-a-stylis-2026-01-07-02-27-31-utc.jpg",
     image:
-      // "/blogs/two-glasses-of-red-wine-on-the-counter-in-a-stylis-2026-01-07-02-27-31-utc.jpg",
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772789914/two-glasses-of-red-wine-on-the-counter-in-a-stylis-2026-01-07-02-27-31-utc_x2qaj9.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/two-glasses-of-red-wine-on-the-counter-in-a-stylis-2026-01-07-02-27-31-utc.jpg",
     date: "2026-02-08",
   },
   {
@@ -66,7 +66,7 @@ export const blogPosts = [
     readTime: "9 min read",
     // image: "/blogs/stylish-modern-kitchen-2026-01-05-00-26-56-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772789957/stylish-modern-kitchen-2026-01-05-00-26-56-utc_xli1z5.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/stylish-modern-kitchen-2026-01-05-00-26-56-utc.jpg",
     date: "2026-02-05",
   },
   {
@@ -77,9 +77,9 @@ export const blogPosts = [
       "Discover the latest bathroom design trends in Melbourne. From premium materials to smart layouts, this expert guide explores the features that add style, comfort, and long-term value to your home.",
     category: "Design Trends",
     readTime: "9 min read",
+    // image: "/blogs/modern-bathroom-interior-design-on-dark-color-wall-2026-01-09-00-40-19-utc.jpg",
     image:
-      // "/blogs/modern-bathroom-interior-design-on-dark-color-wall-2026-01-09-00-40-19-utc.jpg",
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790001/modern-bathroom-interior-design-on-dark-color-wall-2026-01-09-00-40-19-utc_ycgycd.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/modern-bathroom-interior-design-on-dark-color-wall-2026-01-09-00-40-19-utc.jpg",
     date: "2026-02-03",
   },
   {
@@ -92,7 +92,7 @@ export const blogPosts = [
     readTime: "10 min read",
     // image: "/blogs/1CEC14E7-6D81-4781-B9F0-99B6F833218E.JPG",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790040/1CEC14E7-6D81-4781-B9F0-99B6F833218E_xzmfz8.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/1CEC14E7-6D81-4781-B9F0-99B6F833218E.JPG",
     date: "2026-02-01",
   },
   {
@@ -105,7 +105,7 @@ export const blogPosts = [
     readTime: "11 min read",
     // image: "/blogs/modern-laundry-2026-01-05-00-59-16-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790080/modern-laundry-2026-01-05-00-59-16-utc_sb7knz.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/modern-laundry-2026-01-05-00-59-16-utc.jpg",
     date: "2026-01-28",
   },
   {
@@ -119,7 +119,7 @@ export const blogPosts = [
     readTime: "8 min read",
     // image: "/blogs/20251216_233205.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790120/20251216_233205_w0ywrw.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/20251216_233205.jpg",
     date: "2026-01-25",
   },
   {
@@ -133,7 +133,7 @@ export const blogPosts = [
     readTime: "7 min read",
     // image: "/blogs/WhatsApp Image 2026-02-23 at 11.58.58 PM.jpeg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790157/WhatsApp_Image_2026-02-23_at_11.58.58_PM_dpkyuq.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/WhatsApp+Image+2026-02-23+at+11.58.58+PM.jpeg",
     date: "2026-01-22",
   },
   {
@@ -147,7 +147,7 @@ export const blogPosts = [
     readTime: "9 min read",
     // image: "/blogs/modern-kitchen-2026-01-05-01-14-28-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790193/modern-kitchen-2026-01-05-01-14-28-utc_fl6jtl.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/modern-kitchen-2026-01-05-01-14-28-utc.jpg",
     date: "2026-01-20",
   },
   {
@@ -161,7 +161,7 @@ export const blogPosts = [
     readTime: "10 min read",
     // image: "/blogs/modern-kitchen-2026-01-05-00-26-47-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790226/modern-kitchen-2026-01-05-00-26-47-utc_wirquw.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/modern-kitchen-2026-01-05-00-26-47-utc.jpg",
     date: "2026-01-18",
   },
   {
@@ -175,7 +175,7 @@ export const blogPosts = [
     readTime: "10 min read",
     // image: "/blogs/kitchen-2026-01-05-00-26-54-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790269/kitchen-2026-01-05-00-26-54-utc_f9towz.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/kitchen-2026-01-05-00-26-54-utc.jpg",
     date: "2026-01-15",
   },
   {
@@ -189,7 +189,7 @@ export const blogPosts = [
     readTime: "11 min read",
     // image: "/blogs/stylish-modern-kitchen-2026-01-05-00-26-56-utc (1).jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790304/stylish-modern-kitchen-2026-01-05-00-26-56-utc_1_ot6dlc.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/stylish-modern-kitchen-2026-01-05-00-26-56-utc+(1).jpg",
     date: "2026-01-12",
   },
   {
@@ -203,7 +203,7 @@ export const blogPosts = [
     readTime: "10 min read",
     // image: "/blogs/basin-2026-01-05-00-26-55-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790417/basin-2026-01-05-00-26-55-utc_qlm23c.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/basin-2026-01-05-00-26-55-utc.jpg",
     date: "2026-01-10",
   },
   {
@@ -215,9 +215,9 @@ export const blogPosts = [
       "Renovating in Airport West? Discover how to modernise older homes, improve functionality, and add long-term value with this expert renovation guide tailored to Airport West's unique property styles.",
     category: "Local Guides",
     readTime: "10 min read",
+    // image: "/blogs/3d-rendering-luxury-modern-design-bathroom-and-toi-2026-01-06-10-45-06-utc.jpg",
     image:
-      // "/blogs/3d-rendering-luxury-modern-design-bathroom-and-toi-2026-01-06-10-45-06-utc.jpg",
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790464/3d-rendering-luxury-modern-design-bathroom-and-toi-2026-01-06-10-45-06-utc_mxhtod.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/3d-rendering-luxury-modern-design-bathroom-and-toi-2026-01-06-10-45-06-utc.jpg",
     date: "2026-01-08",
   },
   {
@@ -231,7 +231,7 @@ export const blogPosts = [
     readTime: "10 min read",
     // image: "/blogs/basin-2026-01-05-00-45-37-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790571/basin-2026-01-05-00-45-37-utc_tujgew.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/basin-2026-01-05-00-45-37-utc.jpg",
     date: "2026-01-05",
   },
   {
@@ -245,7 +245,7 @@ export const blogPosts = [
     readTime: "10 min read",
     // image: "/blogs/kitchen-2026-01-05-01-13-08-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790663/kitchen-2026-01-05-01-13-08-utc_cmi6zw.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/kitchen-2026-01-05-01-13-08-utc.jpg",
     date: "2026-01-03",
   },
   {
@@ -257,10 +257,9 @@ export const blogPosts = [
       "Renovating in Point Cook? Discover how to modernise contemporary homes, improve functionality, and add long-term value with this expert renovation guide tailored to Point Cook's unique property styles and lifestyle.",
     category: "Local Guides",
     readTime: "10 min read",
-    // image:
-    //   "/blogs/modern-bathroom-interior-mockup-3d-rendering-2026-01-18-11-17-00-utc.jpg",
+    // image: "/blogs/modern-bathroom-interior-mockup-3d-rendering-2026-01-18-11-17-00-utc.jpg",
     image:
-      "https://res.cloudinary.com/dv18awr10/image/upload/v1772790708/modern-bathroom-interior-mockup-3d-rendering-2026-01-18-11-17-00-utc_oxemsm.jpg",
+      "https://dc3v08iv2c2ou.cloudfront.net/blogs/modern-bathroom-interior-mockup-3d-rendering-2026-01-18-11-17-00-utc.jpg",
     date: "2026-01-01",
   },
 ];

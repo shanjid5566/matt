@@ -6,8 +6,13 @@ import CTASection from "../homePage/components/CTASection";
 import MasonryGallery from "../../components/MasonryGallery";
 import Lightbox from "../../components/Lightbox";
 import { getImagesByCategory } from "../../data/portfolioData";
+import usePageMeta from "../../hooks/usePageMeta";
 
 function KitchenPortfolio() {
+  usePageMeta(
+    "Kitchen Renovation Portfolio Melbourne",
+    "Kitchen renovation portfolio Melbourne featuring custom kitchen designs, modern upgrades and completed projects by B-Spoke."
+  );
   const videoRef = useRef(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,9 +43,10 @@ function KitchenPortfolio() {
           >
             <source
               // src="/Our_services/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc.mp4"
-              src="https://res.cloudinary.com/dv18awr10/video/upload/v1772779483/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc_esyvna.mp4"
+              src="https://dc3v08iv2c2ou.cloudfront.net/Our_services/modern-and-spacious-wooden-kitchen-room-2025-12-17-06-34-17-utc.mp4"
               type="video/mp4"
             />
+            
             Your browser does not support the video tag.
           </video>
           {/* Dark Overlay */}

@@ -6,8 +6,13 @@ import CTASection from "../homePage/components/CTASection";
 import MasonryGallery from "../../components/MasonryGallery";
 import Lightbox from "../../components/Lightbox";
 import { getImagesByCategory } from "../../data/portfolioData";
+import usePageMeta from "../../hooks/usePageMeta";
 
 function LaundryPortfolio() {
+  usePageMeta(
+    "Laundry Renovation Portfolio Melbourne",
+    "Laundry renovation portfolio Melbourne with smart layouts, storage solutions and completed laundry upgrade projects."
+  );
   const videoRef = useRef(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,7 +43,7 @@ function LaundryPortfolio() {
           >
             <source
               // src="/banner_video/3d-rendering-laundry-room-on-ground-floor-washing-2025-12-17-11-02-47-utc.mov"
-              src="https://res.cloudinary.com/dv18awr10/video/upload/v1772777948/3d-rendering-laundry-room-on-ground-floor-washing-2025-12-17-11-02-47-utc_k7rn6d.mp4"
+              src="https://dc3v08iv2c2ou.cloudfront.net/banner_video/3d-rendering-laundry-room-on-ground-floor-washing-2025-12-17-11-02-47-utc.mov"
               type="video/mp4"
             />
             Your browser does not support the video tag.

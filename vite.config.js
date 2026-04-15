@@ -9,4 +9,18 @@ export default defineConfig({
     port: 5173,
     open: true,
   },
+  build: {
+    target: "es2020",
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          reactVendor: ["react", "react-dom", "react-router"],
+          motionVendor: ["motion"],
+          lenis: ["lenis"],
+          icons: ["lucide-react"],
+        },
+      },
+    },
+  },
 });

@@ -503,6 +503,17 @@
 
 // export default Footer;
 
+import { Link } from "react-router";
+
+const quickLinks = [
+  { label: "Home", to: "/" },
+  { label: "Portfolio", to: "/portfolio" },
+  { label: "About", to: "/about" },
+  { label: "FAQ", to: "/faqs" },
+  { label: "Blog", to: "/blog" },
+  { label: "Contact", to: "/contact" },
+];
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -521,7 +532,7 @@ const Footer = () => {
           {/* Logo and Company Description */}
           <div>
             <div style={{ marginBottom: "1.25rem" }}>
-              <img src="/logo.png" alt="B-spoke" style={{ height: "6rem" }} />
+              <img src="https://b-spoke-media.s3.eu-north-1.amazonaws.com/logo.png" alt="B-spoke" width="150" height="96" loading="lazy" style={{ height: "6rem", width: "auto" }} />
             </div>
             <p
               className="text-gray-200 text-sm leading-relaxed"
@@ -663,22 +674,14 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="flex flex-col" style={{ gap: "0.5rem" }}>
-              {[
-                "Home",
-                "Services",
-                "Portfolio",
-                "About",
-                "FAQS",
-                "Blog",
-                "Contact",
-              ].map((link) => (
-                <li key={link}>
-                  <a
-                    href={`/${link.toLowerCase()}`}
+              {quickLinks.map((link) => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
                     className="text-gray-200 hover:text-white transition-colors duration-300"
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -1,8 +1,13 @@
 import { motion } from "motion/react";
 import ProcessSection from "../homePage/components/ProcessSection";
 import PhotoGallery from "../homePage/components/PhotoGallery";
+import usePageMeta from "../../hooks/usePageMeta";
 
 function About() {
+  usePageMeta(
+    "About B-Spoke | Melbourne Renovation Builders",
+    "B-Spoke is a Melbourne renovation company delivering kitchen, bathroom and full home renovations with expert craftsmanship and service."
+  );
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -100,7 +105,7 @@ function About() {
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img
                   // src="/about/20240508_165231.jpg"
-                  src="https://res.cloudinary.com/dv18awr10/image/upload/v1772788709/20240508_165231_z5lnjh.jpg"
+                  src="https://dc3v08iv2c2ou.cloudfront.net/about/20240508_165231.jpg"
                   alt="Quality craftsmanship"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -108,7 +113,7 @@ function About() {
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img
                   // src="/about/20240508_165327.jpg"
-                  src="https://res.cloudinary.com/dv18awr10/image/upload/v1772788710/20240508_165327_ewyacf.jpg"
+                  src="https://dc3v08iv2c2ou.cloudfront.net/about/20240508_165327.jpg"
                   alt="Professional construction work"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -167,7 +172,7 @@ function About() {
             >
               <img
                 // src="/about/20240625_102239.jpg"
-                src="https://res.cloudinary.com/dv18awr10/image/upload/v1772788815/20240625_102239_likhg6.jpg"
+                src="https://dc3v08iv2c2ou.cloudfront.net/about/20240625_102239.jpg"
                 alt="Our vision for quality construction"
                 className="w-full h-96 object-cover"
               />
@@ -254,27 +259,20 @@ function About() {
               Our Mission
             </motion.h2>
 
-            {/* Mission Images Grid */}
+            {/* Mission Image */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mb-8 grid grid-cols-1 md:grid-cols-2 gap-6"
+              className="mb-8 flex justify-center"
             >
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg w-full ">
                 <img
                   // src="/about/20240716_171144.jpg"
-                  src="https://res.cloudinary.com/dv18awr10/image/upload/v1772788857/20240716_171144_k1gy45.jpg"
+                  src="https://dc3v08iv2c2ou.cloudfront.net/about/20240716_171144.jpg"
                   alt="Expert construction execution"
-                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="https://res.cloudinary.com/dv18awr10/image/upload/v1772788859/20240808_181735_p1oajm.jpg"
-                  alt="Quality building standards"
-                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full h-96 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </motion.div>
@@ -508,7 +506,7 @@ function About() {
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img
                   // src="/about/20240829_154458.jpg"
-                  src="https://res.cloudinary.com/dv18awr10/image/upload/v1772788953/20240829_154458_ssrjlx.jpg"
+                  src="https://dc3v08iv2c2ou.cloudfront.net/about/20240829_154458.jpg"
                   alt="Completed project showcase"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -516,7 +514,7 @@ function About() {
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img
                   // src="/about/20250917_171419.jpg"
-                  src="https://res.cloudinary.com/dv18awr10/image/upload/v1772788956/20250917_171419_egeb8g.jpg"
+                  src="https://dc3v08iv2c2ou.cloudfront.net/about/20250917_171419.jpg"
                   alt="Professional renovation work"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />

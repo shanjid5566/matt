@@ -4,8 +4,13 @@ import { Phone, Image } from "lucide-react";
 import { useRef } from "react";
 import FeaturesGrid from "../homePage/components/FeaturesGrid";
 import CTASection from "../homePage/components/CTASection";
+import usePageMeta from "../../hooks/usePageMeta";
 
 function LaundryRenovation() {
+  usePageMeta(
+    "Laundry Renovation Melbourne | Smart Laundry Design",
+    "Laundry renovation Melbourne with space-saving layouts, cabinetry and modern finishes. Functional laundry upgrades by experts."
+  );
   const videoRef = useRef(null);
 
   const features = [
@@ -57,8 +62,8 @@ function LaundryRenovation() {
           >
             <source
               // src="/banner_video/3d-rendering-laundry-room-on-ground-floor-washing-2025-12-17-11-02-47-utc.mov"
-              src="https://res.cloudinary.com/dv18awr10/video/upload/v1772777948/3d-rendering-laundry-room-on-ground-floor-washing-2025-12-17-11-02-47-utc_k7rn6d.mp4"
-              type="video/mp4"
+              src="https://dc3v08iv2c2ou.cloudfront.net/banner_video/3d-rendering-laundry-room-on-ground-floor-washing-2025-12-17-11-02-47-utc.mov"
+              // type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
@@ -141,7 +146,7 @@ function LaundryRenovation() {
             >
               <img
                 // src="/laundry_renovation/laundry_1.jpg"
-                src="https://res.cloudinary.com/dv18awr10/image/upload/v1772786386/laundry_1_u7nqno.jpg"
+                src="https://dc3v08iv2c2ou.cloudfront.net/laundry_renovation/laundry_1.jpg"
                 alt="Laundry Design"
                 className="w-full h-full object-cover"
               />
@@ -183,7 +188,7 @@ function LaundryRenovation() {
             >
               <img
                 // src="/laundry_renovation/laundry_2.jpg"
-                src="https://res.cloudinary.com/dv18awr10/image/upload/v1772786387/laundry_2_mdryxn.jpg"
+                src="https://dc3v08iv2c2ou.cloudfront.net/laundry_renovation/laundry_2.jpg"
                 alt="Laundry Example"
                 className="w-full h-full object-cover"
               />
